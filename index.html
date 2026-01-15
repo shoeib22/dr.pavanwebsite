@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Pavan Kumar Ediga | Consultant Neurosurgeon</title>
-    <meta name="description" content="Dr. Pavan Kumar Ediga is a leading Consultant Neurosurgeon in Hyderabad, specializing in Neuro Trauma, Neuro Oncology, and Minimally Invasive Endoscopic Spine Surgery.">
+    <meta name="description"
+        content="Dr. Pavan Kumar Ediga is a leading Consultant Neurosurgeon in Hyderabad, specializing in Neuro Trauma, Neuro Oncology, and Minimally Invasive Endoscopic Spine Surgery.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <style>
+        .business-card {
+            background: rgba(255, 255, 255, 0.95);
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+        }
+
+        .business-card-content {
+            transform: translateZ(20px);
+        }
+
+        .business-card-logo {
+            transform: translateZ(30px);
+        }
+    </style>
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
-        h1, h2, h3, h4, h5, h6 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Merriweather', serif;
         }
+
         .hero-bg {
             background-color: #f8fafc;
             background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230f172a' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
     </style>
 </head>
+
 <body class="text-slate-800 bg-white">
 
     <!-- Navigation -->
@@ -31,7 +59,8 @@
                     <div class="flex-shrink-0 flex items-center gap-2">
                         <i data-lucide="brain-circuit" class="h-8 w-8 text-blue-600"></i>
                         <div>
-                            <span class="font-bold text-xl block leading-none text-slate-900">Dr. Pavan Kumar Ediga</span>
+                            <span class="font-bold text-xl block leading-none text-slate-900">Dr. Pavan Kumar
+                                Ediga</span>
                             <span class="text-xs font-medium text-slate-500 tracking-wider">MCh NEUROSURGERY</span>
                         </div>
                     </div>
@@ -39,10 +68,15 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#home" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Home</a>
                     <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="#services" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Expertise</a>
-                    <a href="#mentorship" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Mentorship</a>
-                    <a href="#locations" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Locations</a>
-                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2.5 rounded-full font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">Book Appointment</a>
+                    <a href="#services"
+                        class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Expertise</a>
+                    <a href="#mentorship"
+                        class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Mentorship</a>
+                    <a href="#location"
+                        class="text-slate-600 hover:text-blue-600 font-medium transition-colors">location</a>
+                    <a href="#contact"
+                        class="bg-blue-600 text-white px-5 py-2.5 rounded-full font-medium hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">Book
+                        Appointment</a>
                 </div>
                 <div class="flex items-center md:hidden">
                     <button type="button" onclick="toggleMobileMenu()" class="text-slate-600 hover:text-slate-900 p-2">
@@ -54,12 +88,19 @@
         <!-- Mobile Menu -->
         <div class="hidden md:hidden bg-white border-t border-slate-100" id="mobile-menu">
             <div class="px-4 pt-2 pb-6 space-y-1">
-                <a href="#home" onclick="toggleMobileMenu()" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md">Home</a>
-                <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md">About</a>
-                <a href="#services" onclick="toggleMobileMenu()" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md">Expertise</a>
-                <a href="#mentorship" onclick="toggleMobileMenu()" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md">Mentorship</a>
-                <a href="#locations" onclick="toggleMobileMenu()" class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md">Locations</a>
-                <a href="#contact" onclick="toggleMobileMenu()" class="block px-3 py-3 text-base font-medium text-blue-600 font-semibold bg-blue-50 rounded-md mt-2">Book Appointment</a>
+                <a href="#home" onclick="toggleMobileMenu()"
+                    class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md">Home</a>
+                <a href="#about" onclick="toggleMobileMenu()"
+                    class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md">About</a>
+                <a href="#services" onclick="toggleMobileMenu()"
+                    class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md">Expertise</a>
+                <a href="#mentorship" onclick="toggleMobileMenu()"
+                    class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md">Mentorship</a>
+                <a href="#location" onclick="toggleMobileMenu()"
+                    class="block px-3 py-3 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 rounded-md">location</a>
+                <a href="#contact" onclick="toggleMobileMenu()"
+                    class="block px-3 py-3 text-base font-medium text-blue-600 font-semibold bg-blue-50 rounded-md mt-2">Book
+                    Appointment</a>
             </div>
         </div>
     </nav>
@@ -69,16 +110,15 @@
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
             <!-- CHANGE THE LINE BELOW -->
-            <img src="photos/pavan-kumar.jpg" 
-                 alt="Dr. Pavan Kumar Ediga" 
-                 class="w-full h-full object-cover opacity-40">
+            <img src="photos/pavan-kumar.jpg" alt="Dr. Pavan Kumar Ediga" class="w-full h-full object-cover opacity-40">
             <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/20"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
                 <div class="lg:col-span-7 text-center lg:text-left">
-                    <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-medium mb-6 backdrop-blur-sm bg-white/50">
+                    <div
+                        class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-medium mb-6 backdrop-blur-sm bg-white/50">
                         <span class="flex h-2 w-2 rounded-full bg-blue-600 mr-2"></span>
                         Accepting New Patients
                     </div>
@@ -86,18 +126,22 @@
                         Advanced Neurosurgical Care in <span class="text-blue-600">Hyderabad</span>
                     </h1>
                     <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
-                        Dr. Pavan Kumar Ediga is a distinguished Consultant Neurosurgeon specializing in Minimally Invasive (Endoscopic) Spine Surgery, Neuro Oncology, and Neuro Trauma.
+                        Dr. Pavan Kumar Ediga is a distinguished Consultant Neurosurgeon specializing in Minimally
+                        Invasive (Endoscopic) Spine Surgery, Neuro Oncology, and Neuro Trauma.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-600/20 transition-all hover:-translate-y-0.5">
+                        <a href="#contact"
+                            class="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-600/20 transition-all hover:-translate-y-0.5">
                             Book Consultation
                             <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
                         </a>
-                        <a href="#locations" class="inline-flex items-center justify-center px-8 py-3.5 border border-slate-300 text-base font-medium rounded-lg text-slate-700 bg-white/80 hover:bg-white hover:text-blue-600 transition-all backdrop-blur-sm">
-                            View Clinic Locations
+                        <a href="#location"
+                            class="inline-flex items-center justify-center px-8 py-3.5 border border-slate-300 text-base font-medium rounded-lg text-slate-700 bg-white/80 hover:bg-white hover:text-blue-600 transition-all backdrop-blur-sm">
+                            View Clinic location
                         </a>
                     </div>
-                    <div class="mt-10 flex items-center justify-center lg:justify-start gap-8 text-slate-600 text-sm font-medium">
+                    <div
+                        class="mt-10 flex items-center justify-center lg:justify-start gap-8 text-slate-600 text-sm font-medium">
                         <div class="flex items-center gap-2">
                             <i data-lucide="check-circle-2" class="text-green-600 h-5 w-5"></i>
                             <span>5+ Years Exp.</span>
@@ -114,24 +158,27 @@
                 </div>
                 <div class="lg:col-span-5 mt-12 lg:mt-0 relative">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-                         <!-- Doctor's Portrait Image -->
-                        <div class="bg-slate-200 aspect-[4/5] flex items-center justify-center relative overflow-hidden group">
-                             
-                             <!-- REPLACE THE SRC BELOW WITH YOUR IMAGE -->
-                             <img src="photos/pavan-kumar.jpg" 
-                                  alt="Dr. Pavan Kumar Ediga" 
-                                  class="absolute inset-0 w-full h-full object-cover">
+                        <!-- Doctor's Portrait Image -->
+                        <div
+                            class="bg-slate-200 aspect-[4/5] flex items-center justify-center relative overflow-hidden group">
 
-                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent z-10"></div>
-                             <div class="absolute bottom-6 left-6 z-20 text-white">
+                            <!-- REPLACE THE SRC BELOW WITH YOUR IMAGE -->
+                            <img src="photos/pavan-kumar.jpg" alt="Dr. Pavan Kumar Ediga"
+                                class="absolute inset-0 w-full h-full object-cover">
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent z-10"></div>
+                            <div class="absolute bottom-6 left-6 z-20 text-white">
                                 <p class="text-2xl font-bold font-serif">Dr. Pavan Kumar Ediga</p>
                                 <p class="text-slate-200 text-sm mt-1">MBBS, MS, MCh (Neurosurgery)</p>
-                             </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Decorative Elements -->
-                    <div class="absolute -top-6 -right-6 h-24 w-24 bg-blue-100 rounded-full blur-2xl -z-10 opacity-60"></div>
-                    <div class="absolute -bottom-6 -left-6 h-32 w-32 bg-teal-100 rounded-full blur-2xl -z-10 opacity-60"></div>
+                    <div class="absolute -top-6 -right-6 h-24 w-24 bg-blue-100 rounded-full blur-2xl -z-10 opacity-60">
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -left-6 h-32 w-32 bg-teal-100 rounded-full blur-2xl -z-10 opacity-60">
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,7 +196,7 @@
                     <div class="text-4xl font-bold text-slate-900 mb-1">5+</div>
                     <div class="text-slate-500 text-sm font-medium uppercase tracking-wider">Experience</div>
                 </div>
-                
+
                 <!-- Stat 2 -->
                 <div class="flex flex-col items-center justify-center p-4">
                     <div class="mb-4 text-slate-400">
@@ -165,7 +212,8 @@
                         <i data-lucide="bot" class="h-8 w-8"></i>
                     </div>
                     <div class="text-4xl font-bold text-slate-900 mb-1">200+</div>
-                    <div class="text-slate-500 text-sm font-medium uppercase tracking-wider">Robotic Surgeries</div>
+                    <div class="text-slate-500 text-sm font-medium uppercase tracking-wider">Minimal invasive surgeries
+                    </div>
                 </div>
 
                 <!-- Stat 4 -->
@@ -187,7 +235,9 @@
                 <h2 class="text-3xl font-bold text-slate-900 mb-4">About Dr. Pavan Kumar</h2>
                 <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full mb-6"></div>
                 <p class="text-lg text-slate-600 leading-relaxed">
-                    Dr. E Pavan Kumar is a highly skilled neurosurgeon known for his expertise in complex spinal and cranial procedures. With a patient-centric approach, he combines advanced surgical techniques with compassionate care to ensure the best possible outcomes.
+                    Dr. E Pavan Kumar is a highly skilled neurosurgeon known for his expertise in complex spinal and
+                    cranial procedures. With a patient-centric approach, he combines advanced surgical techniques with
+                    compassionate care to ensure the best possible outcomes.
                 </p>
             </div>
 
@@ -201,14 +251,15 @@
                     <ul class="space-y-3 text-slate-600 text-sm">
                         <li class="flex items-start gap-2">
                             <div class="min-w-1.5 h-1.5 rounded-full bg-blue-600 mt-2"></div>
-                            <span><strong>MCh Neurosurgery</strong> - Nizam's Institute of Medical Sciences (NIMS), Hyderabad (2022)</span>
+                            <span><strong>MCh Neurosurgery</strong> - Nizam's Institute of Medical Sciences (NIMS),
+                                Hyderabad (2022)</span>
                         </li>
                         <li class="flex items-start gap-2">
-                             <div class="min-w-1.5 h-1.5 rounded-full bg-blue-600 mt-2"></div>
+                            <div class="min-w-1.5 h-1.5 rounded-full bg-blue-600 mt-2"></div>
                             <span><strong>MS General Surgery</strong> - JSS Medical College, Mysuru (2018)</span>
                         </li>
                         <li class="flex items-start gap-2">
-                             <div class="min-w-1.5 h-1.5 rounded-full bg-blue-600 mt-2"></div>
+                            <div class="min-w-1.5 h-1.5 rounded-full bg-blue-600 mt-2"></div>
                             <span><strong>MBBS</strong> - Narayana Medical College, Nellore (2013)</span>
                         </li>
                     </ul>
@@ -221,7 +272,8 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Fellowships</h3>
                     <p class="text-slate-600 text-sm mb-4">
-                        Dr. Pavan Kumar has honed his skills through rigorous international training, bringing global standards of care to Hyderabad.
+                        Dr. Pavan Kumar has honed his skills through rigorous international training, bringing global
+                        standards of care to Hyderabad.
                     </p>
                     <div class="space-y-3">
                         <div class="flex items-center gap-3 bg-white p-3 rounded-lg border border-slate-200">
@@ -236,7 +288,8 @@
 
                 <!-- Card 3 -->
                 <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 mb-6">
+                    <div
+                        class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 mb-6">
                         <i data-lucide="stethoscope" class="h-6 w-6"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Professional Experience</h3>
@@ -245,13 +298,12 @@
                             <i data-lucide="check" class="h-4 w-4 text-green-500 mt-0.5"></i>
                             <span>Consultant Neurosurgeon at <strong>Continental Hospitals</strong>, Gachibowli</span>
                         </li>
+
+
+
                         <li class="flex items-start gap-2">
                             <i data-lucide="check" class="h-4 w-4 text-green-500 mt-0.5"></i>
-                            <span>Consultant Neurosurgeon at <strong>Neo Care Hospital</strong>, Bandlaguda Jagir</span>
-                        </li>
-                         <li class="flex items-start gap-2">
-                            <i data-lucide="check" class="h-4 w-4 text-green-500 mt-0.5"></i>
-                            <span>Former Consultant at Malla Reddy Hospitals</span>
+                            <span>Former Assistant Professor in <strong>NIMS, Hyderabad</strong></span>
                         </li>
                     </ul>
                 </div>
@@ -265,7 +317,8 @@
                             <i data-lucide="mic-2" class="h-5 w-5 text-blue-600"></i>
                             Academic Contributions
                         </h3>
-                        <p class="text-sm text-slate-600 mb-4">Dr. Pavan Kumar actively contributes to the neurosurgical community through research and presentations.</p>
+                        <p class="text-sm text-slate-600 mb-4">Dr. Pavan Kumar actively contributes to the neurosurgical
+                            community through research and presentations.</p>
                         <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100">
                             <h4 class="font-semibold text-slate-900 text-sm mb-2">Paper Presentations</h4>
                             <ul class="text-xs text-slate-600 space-y-2">
@@ -281,43 +334,48 @@
                         </div>
                     </div>
                     <div class="md:col-span-8">
-                         <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-4 border-b border-slate-200 pb-2">Conference Participation</h4>
-                         <div class="grid sm:grid-cols-3 gap-4">
-                             <div class="bg-white p-4 rounded-lg border border-slate-200">
-                                 <span class="text-blue-600 font-bold text-lg block">TNSCON</span>
-                                 <span class="text-slate-500 text-xs font-medium">4-6 March 2022</span>
-                             </div>
-                             <div class="bg-white p-4 rounded-lg border border-slate-200">
-                                 <span class="text-blue-600 font-bold text-lg block">AP NEUROCON</span>
-                                 <span class="text-slate-500 text-xs font-medium">27-28 November 2021</span>
-                             </div>
-                             <div class="bg-white p-4 rounded-lg border border-slate-200">
-                                 <span class="text-blue-600 font-bold text-lg block">TNSCON</span>
-                                 <span class="text-slate-500 text-xs font-medium">6-7 March 2021</span>
-                             </div>
-                         </div>
+                        <h4
+                            class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-4 border-b border-slate-200 pb-2">
+                            Conference Participation</h4>
+                        <div class="grid sm:grid-cols-3 gap-4">
+                            <div class="bg-white p-4 rounded-lg border border-slate-200">
+                                <span class="text-blue-600 font-bold text-lg block">TNSCON</span>
+                                <span class="text-slate-500 text-xs font-medium">4-6 March 2022</span>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg border border-slate-200">
+                                <span class="text-blue-600 font-bold text-lg block">AP NEUROCON</span>
+                                <span class="text-slate-500 text-xs font-medium">27-28 November 2021</span>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg border border-slate-200">
+                                <span class="text-blue-600 font-bold text-lg block">TNSCON</span>
+                                <span class="text-slate-500 text-xs font-medium">6-7 March 2021</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Mentorship & Awards Section -->
     <section id="mentorship" class="py-20 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="text-teal-600 font-semibold tracking-wider text-sm uppercase">International Training & Recognition</span>
+                <span class="text-teal-600 font-semibold tracking-wider text-sm uppercase">International Training &
+                    Recognition</span>
                 <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6 text-slate-900">Honors & Global Mentorship</h2>
             </div>
 
             <!-- Awards Highlight -->
-            <div class="bg-white rounded-2xl p-8 shadow-sm border-l-4 border-yellow-400 mb-12 flex flex-col md:flex-row items-center gap-6">
+            <div
+                class="bg-white rounded-2xl p-8 shadow-sm border-l-4 border-yellow-400 mb-12 flex flex-col md:flex-row items-center gap-6">
                 <div class="bg-yellow-100 p-4 rounded-full text-yellow-600 shrink-0">
                     <i data-lucide="trophy" class="h-8 w-8"></i>
                 </div>
                 <div class="text-center md:text-left">
                     <h3 class="text-xl font-bold text-slate-900">Best Paper Award</h3>
-                    <p class="text-slate-600 mt-1">Awarded for <strong>MISS (Minimally Invasive Spine Surgery) Demonstration</strong> at TNSCON.</p>
+                    <p class="text-slate-600 mt-1">Awarded for <strong>MISS (Minimally Invasive Spine Surgery)
+                            Demonstration</strong> at TNSCON.</p>
                 </div>
             </div>
 
@@ -329,8 +387,10 @@
                         Distinguished Mentors
                     </h3>
                     <div class="space-y-4">
-                        <div class="bg-white p-6 rounded-xl border border-slate-200 flex items-center gap-4 hover:shadow-md transition-shadow">
-                            <div class="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-lg shrink-0">
+                        <div
+                            class="bg-white p-6 rounded-xl border border-slate-200 flex items-center gap-4 hover:shadow-md transition-shadow">
+                            <div
+                                class="h-12 w-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-lg shrink-0">
                                 DP
                             </div>
                             <div>
@@ -339,20 +399,23 @@
                                 <p class="text-xs text-blue-600 font-medium mt-1">Spine Surgery Mentorship</p>
                             </div>
                         </div>
-                        <div class="bg-white p-6 rounded-xl border border-slate-200 flex items-center gap-4 hover:shadow-md transition-shadow">
-                            <div class="h-12 w-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold text-lg shrink-0">
+                        <div
+                            class="bg-white p-6 rounded-xl border border-slate-200 flex items-center gap-4 hover:shadow-md transition-shadow">
+                            <div
+                                class="h-12 w-12 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 font-bold text-lg shrink-0">
                                 HK
                             </div>
                             <div>
                                 <h4 class="font-bold text-slate-900 text-lg">Dr. Heung Sung Kim</h4>
                                 <p class="text-sm text-slate-500">Renowned Neurosurgeon</p>
-                                <p class="text-xs text-teal-600 font-medium mt-1">Harrison Spinaratus Hospital, South Korea</p>
+                                <p class="text-xs text-teal-600 font-medium mt-1">Harrison Spinaratus Hospital, South
+                                    Korea</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
- <!-- Gallery / Moments Placeholder -->
+                <!-- Gallery / Moments Placeholder -->
                 <div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
                         <i data-lucide="image" class="h-6 w-6 text-blue-600"></i>
@@ -362,36 +425,41 @@
                         <!-- Image 1: Certificate -->
                         <div class="group relative aspect-video bg-slate-200 rounded-xl overflow-hidden">
                             <!-- REPLACE SRC BELOW WITH YOUR IMAGE -->
-                            <img src="photos/certificitaes.jpeg" 
-                                 alt="Receiving Fellowship Certificate" 
-                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                            
+                            <img src="photos/certificitaes.jpeg" alt="Receiving Fellowship Certificate"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
                             <!-- Gradient Overlay -->
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
-                            
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10">
+                            </div>
+
                             <!-- Text on Top -->
                             <div class="absolute bottom-3 left-3 right-3 z-20">
-                                <p class="text-white text-xs font-medium leading-tight drop-shadow-md">Receiving Fellowship Certificate from Dr. Heung Sung Kim</p>
+                                <p class="text-white text-xs font-medium leading-tight drop-shadow-md">Receiving
+                                    Fellowship Certificate from Dr. Heung Sung Kim</p>
                             </div>
                         </div>
 
                         <!-- Image 2: Mentors -->
                         <div class="group relative aspect-video bg-slate-200 rounded-xl overflow-hidden">
                             <!-- REPLACE SRC BELOW WITH YOUR IMAGE -->
-                            <img src="photos/mentors.jpeg" 
-                                 alt="Training with Mentors" 
-                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                            
+                            <img src="photos/mentors.jpeg" alt="Training with Mentors"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
                             <!-- Gradient Overlay -->
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
-                            
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10">
+                            </div>
+
                             <!-- Text on Top -->
                             <div class="absolute bottom-3 left-3 right-3 z-20">
-                                <p class="text-white text-xs font-medium leading-tight drop-shadow-md">Training with Dr. Don Park & Dr. Heung Sung Kim</p>
+                                <p class="text-white text-xs font-medium leading-tight drop-shadow-md">Training with Dr.
+                                    Don Park & Dr. Heung Sung Kim</p>
                             </div>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-500 mt-4 italic">* International fellowship completion and advanced training sessions.</p>
+                    <p class="text-xs text-slate-500 mt-4 italic">* International fellowship completion and advanced
+                        training sessions.</p>
                 </div>
             </div>
         </div>
@@ -403,90 +471,109 @@
             <div class="text-center mb-16">
                 <span class="text-blue-400 font-semibold tracking-wider text-sm uppercase">Clinical Expertise</span>
                 <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">Specialized Treatments</h2>
-                <p class="text-slate-400 max-w-2xl mx-auto">Using state-of-the-art technology and minimally invasive techniques to treat complex neurological conditions.</p>
+                <p class="text-slate-400 max-w-2xl mx-auto">Using state-of-the-art technology and minimally invasive
+                    techniques to treat complex neurological conditions.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
-                    <div class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                <div
+                    class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
+                    <div
+                        class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
                         <i data-lucide="minimize-2" class="h-6 w-6 text-blue-400 group-hover:text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Minimally Invasive (Endoscopy) Spine Surgery</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        Advanced endoscopic techniques (Key Hole Surgery) for spine procedures, ensuring smaller incisions, less pain, and faster recovery.
+                        Advanced endoscopic techniques (Key Hole Surgery) for spine procedures, ensuring smaller
+                        incisions, less pain, and faster recovery.
                     </p>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
-                    <div class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                <div
+                    class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
+                    <div
+                        class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
                         <i data-lucide="layers" class="h-6 w-6 text-blue-400 group-hover:text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Neuro Oncology</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        Comprehensive management of Brain & Spinal Tumors, including benign and malignant lesions like gliomas and meningiomas.
+                        Comprehensive management of Brain & Spinal Tumors, including benign and malignant lesions like
+                        gliomas and meningiomas.
                     </p>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
-                    <div class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                <div
+                    class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
+                    <div
+                        class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
                         <i data-lucide="siren" class="h-6 w-6 text-blue-400 group-hover:text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Neuro Trauma</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        Emergency Craniotomy and rapid 24/7 surgical intervention for traumatic brain injuries, blood clots, and spinal cord injuries.
+                        Emergency Craniotomy and rapid 24/7 surgical intervention for traumatic brain injuries, blood
+                        clots, and spinal cord injuries.
                     </p>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
-                    <div class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                <div
+                    class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
+                    <div
+                        class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
                         <i data-lucide="activity" class="h-6 w-6 text-blue-400 group-hover:text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Treatment for Back Pain</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        Specialized care for chronic back pain, sciatica, and spinal pathology using both conservative management and surgical solutions.
+                        Specialized care for chronic back pain, sciatica, and spinal pathology using both conservative
+                        management and surgical solutions.
                     </p>
                 </div>
 
-                 <!-- Service 5 -->
-                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
-                    <div class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                <!-- Service 5 -->
+                <div
+                    class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
+                    <div
+                        class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
                         <i data-lucide="smile" class="h-6 w-6 text-blue-400 group-hover:text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Management of Headache</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        Detailed diagnostic evaluation and advanced treatment protocols for chronic headaches, migraines, and neuralgias.
+                        Detailed diagnostic evaluation and advanced treatment protocols for chronic headaches,
+                        migraines, and neuralgias.
                     </p>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
-                    <div class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                <div
+                    class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
+                    <div
+                        class="h-12 w-12 bg-slate-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
                         <i data-lucide="zap" class="h-6 w-6 text-blue-400 group-hover:text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Facial Nerve Preservation</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">
-                        Utilization of Intraoperative Neuromonitoring (IONM) to preserve facial function during complex CP angle tumor surgeries.
+                        Utilization of Intraoperative Neuromonitoring (IONM) to preserve facial function during complex
+                        CP angle tumor surgeries.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Locations Section -->
-    <section id="locations" class="py-20 bg-slate-50">
+    <!-- location Section -->
+    <section id="location" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Clinic Locations</h2>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Clinic location</h2>
                 <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="grid place-items-center max-w-5xl mx-auto w-full">
                 <!-- Location 1 -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden w-full max-w-md">
                     <div class="bg-blue-600 p-4 text-white">
                         <h3 class="text-xl font-bold flex items-center gap-2">
                             <i data-lucide="building-2" class="h-5 w-5"></i>
@@ -497,7 +584,8 @@
                         <div class="space-y-4">
                             <div class="flex items-start gap-4">
                                 <i data-lucide="map-pin" class="h-5 w-5 text-blue-600 mt-1 shrink-0"></i>
-                                <p class="text-slate-600">Plot No 3, Road No. 2, Financial District, Gachibowli, Hyderabad, Telangana</p>
+                                <p class="text-slate-600">Plot No 3, Road No. 2, Financial District, Gachibowli,
+                                    Hyderabad, Telangana</p>
                             </div>
                             <div class="flex items-start gap-4">
                                 <i data-lucide="clock" class="h-5 w-5 text-blue-600 mt-1 shrink-0"></i>
@@ -506,35 +594,8 @@
                                     <p class="text-slate-600">Mon - Sat: 11:00 AM - 04:00 PM</p>
                                 </div>
                             </div>
-                            <a href="https://maps.google.com/?q=Continental+Hospitals+Gachibowli" target="_blank" class="block w-full text-center py-2 px-4 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors mt-4 text-sm font-medium">
-                                Get Directions
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Location 2 -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-                    <div class="bg-teal-600 p-4 text-white">
-                        <h3 class="text-xl font-bold flex items-center gap-2">
-                            <i data-lucide="plus-circle" class="h-5 w-5"></i>
-                            Neo Care Hospital
-                        </h3>
-                    </div>
-                    <div class="p-8">
-                        <div class="space-y-4">
-                            <div class="flex items-start gap-4">
-                                <i data-lucide="map-pin" class="h-5 w-5 text-teal-600 mt-1 shrink-0"></i>
-                                <p class="text-slate-600">Plot No 43, 45, Opp Perram Cheruvu Bus Stop, Bandlaguda Jagir, Hyderabad, Telangana</p>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <i data-lucide="clock" class="h-5 w-5 text-teal-600 mt-1 shrink-0"></i>
-                                <div>
-                                    <p class="font-semibold text-slate-900">Evening Clinic:</p>
-                                    <p class="text-slate-600">Mon - Sat: 05:00 PM - 06:00 PM</p>
-                                </div>
-                            </div>
-                             <a href="https://maps.google.com/?q=Neo+Care+Hospital+Bandlaguda+Jagir" target="_blank" class="block w-full text-center py-2 px-4 border border-teal-600 text-teal-600 rounded-lg hover:bg-teal-50 transition-colors mt-4 text-sm font-medium">
+                            <a href="https://maps.google.com/?q=Continental+Hospitals+Gachibowli" target="_blank"
+                                class="block w-full text-center py-2 px-4 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors mt-4 text-sm font-medium">
                                 Get Directions
                             </a>
                         </div>
@@ -557,8 +618,10 @@
                         <i data-lucide="star" class="h-4 w-4 fill-current"></i>
                         <i data-lucide="star" class="h-4 w-4 fill-current"></i>
                     </div>
-                    <p class="text-slate-600 italic mb-4">"Professional counselling and sterilized equipment. I had an excellent experience with Dr. E Pavan Kumar. My recovery was speedy thanks to his diagnosis."</p>
-                    <p class="font-bold text-slate-900">- Verified Patient</p>
+                    <p class="text-slate-600 italic mb-4">"Professional counselling and sterilized equipment. I had an
+                        excellent experience with Dr. E Pavan Kumar. My recovery was speedy thanks to his diagnosis."
+                    </p>
+                    <p class="font-bold text-slate-900">- rakesh madishetty</p>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                     <div class="flex text-yellow-400 mb-4">
@@ -568,7 +631,8 @@
                         <i data-lucide="star" class="h-4 w-4 fill-current"></i>
                         <i data-lucide="star" class="h-4 w-4 fill-current"></i>
                     </div>
-                    <p class="text-slate-600 italic mb-4">"One of the best Neurosurgeons in the Financial District area. He explains the problem very clearly and avoids unnecessary surgeries."</p>
+                    <p class="text-slate-600 italic mb-4">"One of the best Neurosurgeons in the Financial District area.
+                        He explains the problem very clearly and avoids unnecessary surgeries."</p>
                     <p class="font-bold text-slate-900">- Ramesh K.</p>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
@@ -579,10 +643,70 @@
                         <i data-lucide="star" class="h-4 w-4 fill-current"></i>
                         <i data-lucide="star" class="h-4 w-4 fill-current"></i>
                     </div>
-                    <p class="text-slate-600 italic mb-4">"Dr. Pavan is very patient and approachable. His expertise in endoscopic spine surgery really helped my father get back on his feet."</p>
+                    <p class="text-slate-600 italic mb-4">"Dr. Pavan is very patient and approachable. His expertise in
+                        endoscopic spine surgery really helped my father get back on his feet."</p>
                     <p class="font-bold text-slate-900">- Priya S.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Digital Business Card Section -->
+    <section id="digital-card" class="py-20 bg-slate-100 flex justify-center items-center overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Digital Business Card</h2>
+
+            <div class="business-card w-full max-w-[600px] aspect-[1.75/1] mx-auto bg-white rounded-xl shadow-2xl overflow-hidden relative border border-slate-200"
+                data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+
+                <!-- Background Pattern -->
+                <div class="absolute inset-0 opacity-[0.03] z-0"
+                    style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+                </div>
+
+                <div
+                    class="business-card-content relative z-10 h-full flex flex-col md:flex-row p-8 items-center gap-8">
+                    <!-- Left Side: Logo -->
+                    <div
+                        class="business-card-logo w-full md:w-5/12 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-200 pb-6 md:pb-0 md:pr-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Continental_Hospital_Logo.jpg"
+                            alt="Continental Hospitals Logo"
+                            class="w-40 md:w-48 object-contain mb-4 filter contrast-125">
+                    </div>
+
+                    <!-- Right Side: Details -->
+                    <div class="w-full md:w-7/12 text-center md:text-right space-y-1">
+                        <h3 class="text-2xl font-bold text-teal-700 font-serif">Dr E Pavan Kumar</h3>
+                        <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-2">MBBS, MS, MCh
+                            (Neuro Surgery)</p>
+
+                        <p class="text-sm font-bold text-slate-800">Consultant Neuro Surgeon</p>
+                        <p class="text-xs text-slate-600 mb-4">Minimal Invasive Brain & Spine Surgeon</p>
+
+                        <div
+                            class="text-[10px] sm:text-xs text-slate-500 space-y-1 mt-4 border-t border-slate-100 pt-3">
+                            <p class="flex items-center justify-center md:justify-end gap-2">
+                                <i data-lucide="phone" class="h-3 w-3 text-teal-600"></i>
+                                +91 70930 85231
+                            </p>
+                            <p class="flex items-center justify-center md:justify-end gap-2">
+                                <i data-lucide="phone" class="h-3 w-3 text-teal-600"></i>
+                                +91 40 67000000
+                            </p>
+                            <p class="flex items-center justify-center md:justify-end gap-2">
+                                <i data-lucide="mail" class="h-3 w-3 text-teal-600"></i>
+                                drpavan.e@continentalhospitals.com
+                            </p>
+                            <p class="flex items-center justify-center md:justify-end gap-2 mt-2">
+                                <i data-lucide="map-pin" class="h-3 w-3 text-teal-600"></i>
+                                <span class="max-w-[200px] text-right">IT & Financial Dist, Gachibowli, Hyderabad - 500
+                                    032</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-slate-400 text-sm mt-8">Hover over the card to see the 3D effect</p>
         </div>
     </section>
 
@@ -591,14 +715,17 @@
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to prioritize your health?</h2>
             <p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
-                Schedule a consultation with Dr. Pavan Kumar Ediga for expert neurosurgical care. Available at Continental Hospitals and Neo Care Hospital.
+                Schedule a consultation with Dr. Pavan Kumar Ediga for expert neurosurgical care. Available at
+                Continental Hospitals.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="tel:+914067000700" class="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-slate-50 transition-all shadow-lg">
+                <a href="tel:+914067000700"
+                    class="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-lg hover:bg-slate-50 transition-all shadow-lg">
                     <i data-lucide="phone" class="mr-2 h-5 w-5"></i>
                     Call Continental: 040 6700 0700
                 </a>
-                 <button onclick="document.getElementById('appointmentModal').classList.remove('hidden')" class="inline-flex items-center justify-center px-8 py-4 bg-blue-700 text-white font-bold rounded-lg border border-blue-500 hover:bg-blue-800 transition-all shadow-lg">
+                <button onclick="document.getElementById('appointmentModal').classList.remove('hidden')"
+                    class="inline-flex items-center justify-center px-8 py-4 bg-blue-700 text-white font-bold rounded-lg border border-blue-500 hover:bg-blue-800 transition-all shadow-lg">
                     <i data-lucide="calendar" class="mr-2 h-5 w-5"></i>
                     Request Appointment
                 </button>
@@ -613,7 +740,8 @@
                 <div class="col-span-1 md:col-span-2">
                     <h3 class="text-white text-lg font-bold mb-4 font-serif">Dr. Pavan Kumar Ediga</h3>
                     <p class="text-sm leading-relaxed max-w-xs">
-                        Dedicated to providing world-class neurosurgical care with a focus on minimally invasive techniques and patient safety.
+                        Dedicated to providing world-class neurosurgical care with a focus on minimally invasive
+                        techniques and patient safety.
                     </p>
                 </div>
                 <div>
@@ -622,7 +750,7 @@
                         <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
                         <li><a href="#about" class="hover:text-white transition-colors">About Doctor</a></li>
                         <li><a href="#services" class="hover:text-white transition-colors">Treatments</a></li>
-                        <li><a href="#locations" class="hover:text-white transition-colors">Clinics</a></li>
+                        <li><a href="#location" class="hover:text-white transition-colors">Clinics</a></li>
                     </ul>
                 </div>
                 <div>
@@ -634,36 +762,47 @@
                 </div>
             </div>
             <div class="border-t border-slate-800 pt-8 text-center text-xs">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> Dr. Pavan Kumar Ediga. All rights reserved.</p>
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script> Dr. Pavan Kumar Ediga. All rights
+                    reserved.
+                </p>
             </div>
         </div>
     </footer>
 
     <!-- Simple Appointment Modal -->
-    <div id="appointmentModal" class="fixed inset-0 bg-black/50 z-[60] hidden flex items-center justify-center p-4 backdrop-blur-sm">
+    <div id="appointmentModal"
+        class="fixed inset-0 bg-black/50 z-[60] hidden flex items-center justify-center p-4 backdrop-blur-sm">
         <div class="bg-white rounded-2xl w-full max-w-md p-6 shadow-2xl relative animate-[fadeIn_0.2s_ease-out]">
-            <button onclick="document.getElementById('appointmentModal').classList.add('hidden')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+            <button onclick="document.getElementById('appointmentModal').classList.add('hidden')"
+                class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
                 <i data-lucide="x" class="h-6 w-6"></i>
             </button>
             <h3 class="text-xl font-bold text-slate-900 mb-2">Request Call Back</h3>
-            <p class="text-slate-600 text-sm mb-6">Leave your details and our team will contact you to confirm your appointment slot.</p>
-            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Our team will contact you shortly.'); document.getElementById('appointmentModal').classList.add('hidden');">
+            <p class="text-slate-600 text-sm mb-6">Leave your details and our team will contact you to confirm your
+                appointment slot.</p>
+            <form class="space-y-4"
+                onsubmit="event.preventDefault(); alert('Thank you! Our team will contact you shortly.'); document.getElementById('appointmentModal').classList.add('hidden');">
                 <div>
                     <label class="block text-sm font-medium text-slate-700 mb-1">Full Name</label>
-                    <input type="text" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
+                    <input type="text" required
+                        class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
                 </div>
                 <div>
                     <label class="block text-sm font-medium text-slate-700 mb-1">Phone Number</label>
-                    <input type="tel" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
+                    <input type="tel" required
+                        class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
                 </div>
-                 <div>
+                <div>
                     <label class="block text-sm font-medium text-slate-700 mb-1">Preferred Location</label>
-                    <select class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
+                    <select
+                        class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all">
                         <option>Continental Hospitals, Gachibowli</option>
-                        <option>Neo Care Hospital, Bandlaguda</option>
+
                     </select>
                 </div>
-                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                <button type="submit"
+                    class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition-colors">
                     Submit Request
                 </button>
             </form>
@@ -681,7 +820,7 @@
         }
 
         // Navbar Scroll Effect
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 20) {
                 navbar.classList.add('shadow-md', 'bg-white/95', 'backdrop-blur-md');
@@ -693,4 +832,5 @@
         });
     </script>
 </body>
+
 </html>
